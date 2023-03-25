@@ -22,7 +22,7 @@ function DNAStrand(dna){
   }).join("")
 }
 
-// Alternative solution:
+// Best practice:
 // function DNAStrand(dna){
 //   const DNAComplement = {
 //     'G' : 'C',
