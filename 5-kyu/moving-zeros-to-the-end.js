@@ -4,6 +4,7 @@ Write an algorithm that takes an array and moves all of the zeros to the end, pr
 moveZeros([false,1,0,1,2,0,1,3,"a"]) // returns[false,1,1,2,1,3,"a",0,0]
 */
 
+// My solution
 function moveZeros(arr) {
     arr.reduceRight((acc, e, i) => {
         if (e === 0) {
@@ -14,7 +15,7 @@ function moveZeros(arr) {
     return arr
 }
 
-// Best practice:
-// var moveZeros = function (arr) {
-//     return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
-// }
+// Most voted solution
+var moveZeros = function (arr) {
+    return arr.filter(function(x) {return x !== 0}).concat(arr.filter(function(x) {return x === 0;}));
+}

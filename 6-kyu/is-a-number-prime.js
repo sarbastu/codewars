@@ -13,6 +13,8 @@ is_prime(2)  // true
 is_prime(-1) // false
 */
 
+
+// My solution
 function isPrime(num) {
     if(num < 2) return false;
     if(num === 2) return true;
@@ -22,12 +24,12 @@ function isPrime(num) {
     return true;
 } 
 
-// Best practice:
-// function isPrime(num) {
-//     for(let i = 2; i <= Math.sqrt(num); i++) {
-//         if(num % i === 0) {
-//         return false;
-//         }
-//     }
-//     return num > 1
-// }
+// Most voted solution
+function isPrime(num) {
+    for(let i = 2; i <= Math.sqrt(num); i++) {
+        if(num % i === 0) {
+        return false;
+        }
+    }
+    return num > 1
+}

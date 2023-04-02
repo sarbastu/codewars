@@ -1,6 +1,4 @@
 /*
-Description
-
 Write a function that when given a URL as a string, parses out just the domain name and returns it as a string. For example:
 
 * url = "http://github.com/carbonfive/raygun" -> domain name = "github"
@@ -8,16 +6,17 @@ Write a function that when given a URL as a string, parses out just the domain n
 * url = "https://www.cnet.com"                -> domain name = cnet"
 */
 
+// My solution
 function domainName(url){
    	let el = document.createElement("a")
     el.href = url
     return url.hostname
 }
 
-// Best practice:
-// function domainName(url){
-//     url = url.replace("https://", '');
-//     url = url.replace("http://", '');
-//     url = url.replace("www.", '');
-//     return url.split('.')[0];
-// };
+// Most voted solution
+function domainName(url){
+    url = url.replace("https://", '');
+    url = url.replace("http://", '');
+    url = url.replace("www.", '');
+    return url.split('.')[0];
+};

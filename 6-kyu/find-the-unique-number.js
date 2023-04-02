@@ -14,11 +14,12 @@ Find the unique string
 Find The Unique
 */
 
+// My solution
 function findUniq(arr) {
     return arr.filter(e => arr.indexOf(e) === arr.lastIndexOf(e))[0]
 }
   
-// Best practice:
-// function findUniq(arr) {
-//     return arr.find(e => arr.indexOf(e) === arr.lastIndexOf(e))
-// }
+// Most voted solution
+function findUniq(arr) {
+    return arr.find(e => arr.indexOf(e) === arr.lastIndexOf(e))
+}

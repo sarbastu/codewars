@@ -11,6 +11,7 @@ rgb(0,0,0) // returns 000000
 rgb(148, 0, 211) // returns 9400D3
 */
 
+// My solution
 function rgb(r, g, b){
     function toHex(val){
         let rangeCorrectedVal = val < 0 ? 0
@@ -25,9 +26,9 @@ function rgb(r, g, b){
     return toHex(r) + toHex(g) + toHex(b)
 }
 
-// Best practice:
-// function rgb(r, g, b){
-//     return [r,g,b].map(function(x) {
-//         return ('0'+Math.max(0, Math.min(255, x)).toString(16)).slice(-2);
-//     }).join('').toUpperCase();
-// }
+// Most voted solution
+function rgb(r, g, b){
+    return [r,g,b].map(function(x) {
+        return ('0'+Math.max(0, Math.min(255, x)).toString(16)).slice(-2);
+    }).join('').toUpperCase();
+}

@@ -1,5 +1,4 @@
 /*
-Description
 An infinite number of shelves are arranged one above the other in a staggered fashion.
 The cat can jump either one or three shelves at a time: from shelf i to shelf i+1 or i+3 (the cat cannot climb on the shelf directly above its head), according to the illustration:
 
@@ -31,6 +30,7 @@ Example
 Start 1, finish 5, then answer is 2 (1 => 4 => 5 or 1 => 2 => 5)
 */
 
+// My solution
 function solution(start, finish) 
 {
   for(var i = 0; start < finish; i++){
@@ -39,6 +39,6 @@ function solution(start, finish)
   return i
 }
 
-//Best practice:
-//const solution = (start, finish, difference = finish - start) =>
-//  Math.floor(difference / 3) + difference % 3
+// Most voted solution
+const solution = (start, finish, difference = finish - start) =>
+ Math.floor(difference / 3) + difference % 3

@@ -1,6 +1,4 @@
 /*
-Description
-
 Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
 
 If you want to know more: http://en.wikipedia.org/wiki/DNA
@@ -15,6 +13,7 @@ Example: (input --> output)
 "GTAT" --> "CATA"
 */
 
+// My solution
 function DNAStrand(dna){
     return dna.split("").map((e) => {
     return e == "A" ? "T" 
@@ -24,13 +23,13 @@ function DNAStrand(dna){
   }).join("")
 }
 
-// Best practice:
-// function DNAStrand(dna){
-//   const DNAComplement = {
-//     'G' : 'C',
-//     'C' : 'G', 
-//     'T' : 'A',
-//     'A' : 'T'
-//   }
-//   return dna.split('').map(elem => DNAComplement[elem]).join('')
-// }
+// Most voted solution
+function DNAStrand(dna){
+  const DNAComplement = {
+    'G' : 'C',
+    'C' : 'G', 
+    'T' : 'A',
+    'A' : 'T'
+  }
+  return dna.split('').map(elem => DNAComplement[elem]).join('')
+}
