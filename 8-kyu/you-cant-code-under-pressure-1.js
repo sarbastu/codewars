@@ -1,13 +1,16 @@
-/* DESCRIPTION:
+/* DESCRIPTION: */
+/* ==========================================================================
 Code as fast as you can! You need to double the integer and return it.
-*/
-
-// My solution
+========================================================================== */
+/* My solution 
+================================================ */
 function doubleInteger(i) {
-  return i * 2;
+  return i * 2
 }
 
-// Other  solution
+/* ===============================================
+* Solution by other users (usually highest voted) 
+================================================ */
 function doubleInteger(i) {
-  return i + i;
+  return i + i
 }
