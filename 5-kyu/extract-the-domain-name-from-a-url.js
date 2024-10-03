@@ -10,9 +10,20 @@ domain name and returns it as a string. For example:
 /* My solution 
 ================================================ */
 function domainName(url) {
+  let sourceString = url
+    .replace('http://', '')
+    .replace('https://', '')
+    .replace('www.', '')
+    .split(/[/?#]/)[0]
+  let domain = sourceString.split('.')[0]
+  return domain
+}
+
+//original solution that does not work with the codewars client
+function domainName(url) {
   let el = document.createElement('a')
   el.href = url
-  return url.hostname
+  return el.hostname
 }
 
 /* ===============================================
