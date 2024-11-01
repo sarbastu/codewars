@@ -7,8 +7,7 @@ from a given string.
 ================================================ */
 SELECT
     s,
-REPLACE
-    (s, '!', '') as res
+    REPLACE(s, '!', '') as res
 FROM
     RemoveExclamationMarks;
 
@@ -16,10 +15,8 @@ FROM
  * Solution by other users (usually highest voted) 
 ================================================ */
 CREATE OR
-REPLACE
-    FUNCTION RemoveExclamationMarks (s TEXT) RETURNS TEXT LANGUAGE plpgsql AS $$ BEGIN
+REPLACE FUNCTION RemoveExclamationMarks (s TEXT) RETURNS TEXT LANGUAGE plpgsql AS $$ BEGIN
 RETURN TRANSLATE (s, '!', '');
-
 END $$;
 
 SELECT

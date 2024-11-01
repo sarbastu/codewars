@@ -30,4 +30,4 @@ SELECT
         END
     ) AS res
 FROM
-    multiplication
+    multiplication;

@@ -21,8 +21,7 @@ FROM
  * Solution by other users (usually highest voted) 
 ================================================ */
 CREATE OR
-REPLACE
-  FUNCTION myrevFCT (text) RETURNS text AS $$
+REPLACE FUNCTION myrevFCT (text) RETURNS text AS $$
 SELECT
   array_to_string (
     ARRAY (

@@ -36,4 +36,4 @@ SELECT
         ELSE True
     END AS res
 FROM
-    zerofuel
+    zerofuel;

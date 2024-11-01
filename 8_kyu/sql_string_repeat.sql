@@ -12,7 +12,7 @@ Examples (input -> output)
 SELECT
     s,
     n,
-REPEAT (s, n) as RES
+    REPEAT(s, n) as RES
 FROM
     repeatstr;
 
@@ -20,22 +20,15 @@ FROM
  * Solution by other users (usually highest voted) 
 ================================================ */
 CREATE OR
-REPLACE
-    FUNCTION fkt (i int, t text) RETURNS text LANGUAGE 'plpgsql' AS $$ DECLARE res text := '';
-
+REPLACE FUNCTION fkt (i int, t text) RETURNS text LANGUAGE 'plpgsql' AS $$ DECLARE res text := '';
 BEGIN
 WHILE i > 0
 LOOP i := i -1;
-
 res := CONCAT(res, t);
-
 END
 LOOP;
-
 RETURN res;
-
 END;
-
 $$;
 
 SELECT
@@ -43,4 +36,4 @@ SELECT
     n,
     fkt (n, s) AS res
 FROM
-    repeatstr
+    repeatstr;

@@ -25,4 +25,4 @@ FROM
 select
     coalesce(position, 0) + coalesce(roll, 0) * 2 as res
 from
-    moves
+    moves;

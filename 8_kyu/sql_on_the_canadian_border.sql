@@ -14,7 +14,7 @@ SELECT
 FROM
     travelers
 WHERE
-    country NOT IN('Canada', 'Mexico', 'USA');
+    country NOT IN ('Canada', 'Mexico', 'USA');
 
 /* ===============================================
  * Solution by other users (usually highest voted) 
@@ -26,4 +26,4 @@ FROM
     travelers
 WHERE
     country IS NULL OR
-    country NOT IN('Canada', 'Mexico', 'USA')
+    country NOT IN ('Canada', 'Mexico', 'USA');
