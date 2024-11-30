@@ -46,6 +46,15 @@ function diamond(n) {
   return pyramid
 }
 
+function diamond(n) {
+  let [stars, rows] = [1, []]
+  while (stars * Math.ceil(n % 2) > 0) {
+    rows.push('*'.repeat(stars).padStart((n + stars) / 2, ' '))
+    stars += rows.length * 2 < n ? 2 : -2
+  }
+  return [...rows, ''].join('\n') || null
+}
+
 /* ===============================================
 * Solution by other users (usually highest voted) 
 ================================================ */
