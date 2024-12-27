@@ -1,0 +1,22 @@
+/* DESCRIPTION: */
+/* ==========================================================================
+Is every value in the array an array?
+
+This should only test the second array dimension of the array. The values 
+of the nested arrays don't have to be arrays.
+
+Examples:
+
+[[1],[2]] => true
+['1','2'] => false
+[{1:1},{2:2}] => false
+========================================================================== */
+/* My solution 
+================================================ */
+const arrCheck = (value) =>
+  value.length === value.filter((e) => Array.isArray(e)).length;
+
+/* ===============================================
+* Solution by other users (usually highest voted) 
+================================================ */
+const arrCheck = (a) => a.every(Array.isArray);
