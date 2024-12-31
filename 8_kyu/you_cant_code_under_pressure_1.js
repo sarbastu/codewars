@@ -1,16 +1,16 @@
 /* DESCRIPTION: */
 /* ==========================================================================
-...description here.
+Code as fast as you can! You need to double the integer and return it.
 ========================================================================== */
 /* My solution 
 ================================================ */
-function template() {
-  //...
+function doubleInteger(i) {
+  return i * 2;
 }
 
 /* ===============================================
 * Solution by other users (usually highest voted) 
 ================================================ */
-function template() {
-  //...
+function doubleInteger(i) {
+  return i + i;
 }

@@ -1,16 +1,22 @@
 /* DESCRIPTION: */
 /* ==========================================================================
-...description here.
+Complete the solution so that the function will break up camel casing, using 
+a space between words.
+
+Example
+"camelCasing"  =>  "camel Casing"
+"identifier"   =>  "identifier"
+""             =>  ""
 ========================================================================== */
 /* My solution 
 ================================================ */
-function template() {
-  //...
+function solution(string) {
+  return string.split(/(?=[A-Z])/).join(' ');
 }
 
 /* ===============================================
 * Solution by other users (usually highest voted) 
 ================================================ */
-function template() {
-  //...
+function solution(string) {
+  return string.replace(/([A-Z])/g, ' $1');
 }
