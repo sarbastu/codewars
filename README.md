@@ -15,22 +15,9 @@ Each challenge includes:
 ---
 
 ## **📂 Folder Structure**
-The repository is organized by **difficulty level** and **secondary language** challenges, if there are any, for easy navigation:
+The repository is organized by **difficulty level** and **secondary language** (if there are any):
 
-.
-├── 8_kyu/
-│   ├── cs
-│   ├── challenge_name.js
-│   └── ...
-├── 7_kyu/
-│   ├── sql
-│   ├── challenge_name.js
-│   └── ...
-├── 6_kyu/
-│   ├── challenge_name.js
-│   └── ...
-├── README.md
-├── template
+``` . ├── 8_kyu/ │ ├── cs │ ├── challenge_name.js │ └── ... ├── 7_kyu/ │ ├── sql │ ├── challenge_name.js │ └── ... ├── 6_kyu/ │ ├── challenge_name.js │ └── ... ├── README.md ├── template ```
 
 
 - **`kyu` Levels**: Reflect the difficulty of the challenge:
