@@ -5,12 +5,12 @@ Hi! This is my **Codewars Challenges** repository! Here, I have my solutions to 
 ## **📋 About This Repository**
 This repository serves as:
 - A personal log of my programming journey and problem-solving techniques.
-- A reference for developers who are tackling similar challenges.
+- A reference for others who are tackling similar challenges.
 
 Each challenge includes:
 1. The problem description.
-2. My solution(s), with comments explaining the approach.
-3. Alternative solutions for comparison.
+2. My solution(s).
+3. Alternative solution(s) for comparison.
 
 ---
 
