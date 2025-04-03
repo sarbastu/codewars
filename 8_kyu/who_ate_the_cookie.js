@@ -1,0 +1,33 @@
+/* DESCRIPTION: */
+/* ==========================================================================
+For this problem you must create a program that says who ate the last cookie. 
+If the input is a string then "Zach" ate the cookie. If the input is a float 
+or an int then "Monica" ate the cookie. If the input is anything else 
+"the dog" ate the cookie. The way to return the statement is: 
+"Who ate the last cookie? It was (name)!"
+
+Ex: Input = "hi" --> Output = "Who ate the last cookie? It was Zach! 
+(The reason you return Zach is because the input is a string)
+
+Note: Make sure you return the correct message with 
+correct spaces and punctuation.
+========================================================================== */
+/* My solution 
+================================================ */
+function cookie(x) {
+  let eater = 'the dog';
+
+  if (typeof x === 'string') eater = 'Zach';
+  if (typeof x === 'number') eater = 'Monica';
+
+  return `Who ate the last cookie? It was ${eater}!`;
+}
+
+/* ===============================================
+* Solution by other users (usually highest voted) 
+================================================ */
+function cookie(x) {
+  return `Who ate the last cookie? It was ${
+    { string: 'Zach', number: 'Monica' }[typeof x] || 'the dog'
+  }!`;
+}
